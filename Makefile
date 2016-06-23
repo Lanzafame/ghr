@@ -12,7 +12,6 @@ clean:
 deps:
 	go get -d -t -v ./...
 	go get golang.org/x/tools/cmd/cover
-	go get golang.org/x/tools/cmd/vet
 
 install: deps
 	go install -ldflags "-X main.GitCommit=\"$(COMMIT)\""
